@@ -1,0 +1,346 @@
+:root {
+    
+    --Pale-Violet : hsl(275, 100%, 65%);
+    --Moderate-Violet : hsl(276, 88%, 68%);
+    --Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+    --Grayish-Blue : hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated  : hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet : hsl(270, 7%, 64%);
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet : hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);
+    --Very-Light-Magenta : hsl(289, 100%, 72%);
+
+    --input-border-radius : 30px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:Rubik;
+} 
+body {
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+}
+
+.phone-container {
+    position: relative;
+    right: 140px;
+    width: 50rem;
+    height: 85%;
+    border-radius: 0 0 40% 59%;
+    background: linear-gradient(180deg , var(--Light-Magenta) -40%, var(--Light-Violet) 100%);
+
+}
+
+.phone {
+    left: 390px;
+    top: 3px;
+    position: relative;
+    background-color: #f5f3f8;
+    height: 65rem;
+    width: 32rem;
+    border-radius: 3.9rem;
+    box-shadow: -2px 2px 69px 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: -2px 2px 69px 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: -2px 2px 69px 6px rgba(0,0,0,0.3);
+    border: 10px solid #fff;
+    transform: scale(0.6);
+    box-sizing: border-box;
+}
+
+.white-container {
+    margin-left: 6.7rem;
+    position: absolute;
+    height: 2.3rem;
+    border-radius:0 0 1.8rem 1.8rem;
+    background-color: white;
+    width: 15.9rem;
+}
+.phone-header {
+    background: linear-gradient(90deg , var(--Light-Violet) -20%, var(--Light-Magenta) 100%);
+    width: 100%;
+    height: 13%;
+    border-radius: 2.8rem 2.5rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.header-texts {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.phone-header p {
+    font-size: 1rem;
+    color: var(--Light-Grayish-Violet);
+    font-weight: 300;
+    opacity: .6;
+}
+.phone-header h4 {
+    color: var(--Light-Grayish-Violet);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.phone-header h4, p {
+    margin: 0;
+    margin-top: 0.2rem;
+}
+.profile {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 2rem 1rem 2rem 3.2rem;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dots-container {
+    width: 6px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 9rem;
+}
+  
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0.1rem;
+    opacity: .8;
+}
+.chevron {
+    height:20px;
+    width: 19px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 0.9rem;
+}
+.chevron::before, .chevron::after {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 3px;
+    background: #fff;
+    top: 50%;
+
+}
+.chevron::before {
+    transform-origin: 103% 0%;
+    transform: rotate(114deg);
+}
+.chevron::after {
+    transform-origin: 26% -68%;
+    transform: rotate(68deg);
+    right: 0;
+}
+.message-container {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0.8rem 0  0.8rem;
+    border-radius: 0 0 3.9rem 3.9rem;
+    
+}
+.message-left {
+    color: var(--Moderate-Violet);
+    padding: 1rem;
+    background-color: #ede5f1;
+    border-radius: 15px 15px 15px 5px;
+    width: 55%;
+    height: fit-content;
+    font-weight: 450;
+    margin: 0.5rem 0.5rem 1rem 0;
+    transform: scale(0.99);
+    transform-origin: top left;
+}
+
+.message-left p {
+    margin:  0;
+}
+.dog-photo {
+    align-self: end;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.dog-photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 0.3rem 0 0.3rem;
+}
+.message-right {
+    background-color: #fff;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px 15px 0px 15px;
+    margin: 0rem 0;
+    align-self: end;
+    transform: scale(0.93);
+    transform-origin: top right;
+    margin-bottom: 0.2rem;
+    color: var(--Desaturated-Dark-Violet);
+}
+
+.message-one {
+    width: 16rem;
+}
+
+.price h2  {
+    margin-right: 2.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px 15px 15px 5px;
+    background:linear-gradient(90deg , var(--Light-Magenta) 10%, var(--Light-Violet) 100%);
+    width: 92%;
+    color: #fff;
+    height: 5rem;
+    margin-bottom: 0.1rem;
+    transform: scale(0.8);
+    transform-origin: top left;
+
+}
+.price-container p , .white-border-circle{
+    opacity: .7;
+}
+
+.price-container p {
+    margin-right: 20px;
+}
+
+.white-border-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: .5;
+    margin-left: 1.5rem;
+}
+
+.price-txt-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input {
+    padding: 1.4rem;
+    border: 1px solid #fff;
+    width: 90%;
+    outline: 0;
+}
+input::placeholder {
+    opacity: .5;
+}
+
+.input-container , .input {
+    border-radius: var(--input-border-radius);
+}
+.input-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-right: 0.5rem;
+}
+
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    max-width: 33%;
+    flex-direction: column;
+    line-height: 1.7;
+    margin-left: 13.5rem;
+}
+
+.text-box h1 {
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.text-box p {
+    color: var(--Dark-Grayish-Violet);
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .phone-container {
+        width: 40rem;
+        right: 100vw;
+    }
+
+    .text-box {
+        margin: 0;
+        text-align: center;
+        max-width: 30rem;
+        margin-top: 5rem;
+    }
+
+    .phone {
+        top: -40px;
+        left: 25rem;
+    }
+
+    .phone-container {
+        height: 70%;
+        right: 24rem;
+        height: 70%;
+    }
+
+    .right-box {
+        display: none;
+    }
+}
+
+
+.right-box {
+    z-index: -3;
+    position: fixed;
+    right: -30rem;
+    top: 8rem;
+    width: 64.5rem;
+    height: 100%;
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 35% 67% 0 0;
+    opacity: .4;
+}
