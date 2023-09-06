@@ -31,8 +31,8 @@ body {
 .phone-container {
     position: relative;
     right: 110px;
-    width: 50rem;
-    height: 570px;
+    width: 52rem;
+    height: 590px;
     border-radius: 0 0 49% 54%;
     background: linear-gradient(180deg , var(--Light-Magenta) -40%, var(--Light-Violet) 100%);
 
