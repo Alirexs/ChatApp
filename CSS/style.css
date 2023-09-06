@@ -32,7 +32,7 @@ body {
     position: relative;
     right: 140px;
     width: 50rem;
-    height: 85%;
+    height: 90vh;
     border-radius: 0 0 40% 59%;
     background: linear-gradient(180deg , var(--Light-Magenta) -40%, var(--Light-Violet) 100%);
 
@@ -40,7 +40,6 @@ body {
 
 .phone {
     left: 390px;
-    top: 3px;
     position: relative;
     background-color: #f5f3f8;
     height: 65rem;
@@ -317,13 +316,13 @@ input::placeholder {
     }
 
     .phone {
-        top: -40px;
-        left: 25rem;
+        top: -90px;
+        left: 27rem;
     }
 
     .phone-container {
         height: 70%;
-        right: 24rem;
+        right: 28rem;
         height: 70%;
     }
 
