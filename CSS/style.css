@@ -30,10 +30,10 @@ body {
 
 .phone-container {
     position: relative;
-    right: 140px;
+    right: 110px;
     width: 50rem;
-    height: 90vh;
-    border-radius: 0 0 40% 59%;
+    height: 87vh;
+    border-radius: 0 0 49% 54%;
     background: linear-gradient(180deg , var(--Light-Magenta) -40%, var(--Light-Violet) 100%);
 
 }
@@ -49,7 +49,7 @@ body {
     -webkit-box-shadow: -2px 2px 69px 6px rgba(0,0,0,0.3);
     -moz-box-shadow: -2px 2px 69px 6px rgba(0,0,0,0.3);
     border: 10px solid #fff;
-    transform: scale(0.6);
+    transform: scale(0.67);
     box-sizing: border-box;
 }
 
@@ -69,6 +69,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 0.5rem;
+    border-top: 1px solid #fff;
 }
 
 .header-texts {
@@ -336,7 +337,7 @@ input::placeholder {
     z-index: -3;
     position: fixed;
     right: -30rem;
-    top: 8rem;
+    top: 10rem;
     width: 64.5rem;
     height: 100%;
     background-color: var(--Light-Grayish-Violet);
